@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCCB9EA628C1E81F96ACC935 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EB1D0FA01069A8A2A5E0E5 /* libPods.a */; };
+		FD7839B21C1FAB0D0015531A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7839B11C1FAB0D0015531A /* main.m */; };
+		FD7839B51C1FAB0D0015531A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7839B41C1FAB0D0015531A /* AppDelegate.m */; };
+		FD7839B81C1FAB0D0015531A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7839B71C1FAB0D0015531A /* ViewController.m */; };
+		FD7839BB1C1FAB0D0015531A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7839B91C1FAB0D0015531A /* Main.storyboard */; };
+		FD7839BD1C1FAB0D0015531A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7839BC1C1FAB0D0015531A /* Images.xcassets */; };
+		FD7839C01C1FAB0D0015531A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD7839BE1C1FAB0D0015531A /* LaunchScreen.xib */; };
+		FD7839CC1C1FAB0D0015531A /* MealPickerProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7839CB1C1FAB0D0015531A /* MealPickerProjectTests.m */; };
+		FD7839DA1C1FAB8D0015531A /* Budget.png in Resources */ = {isa = PBXBuildFile; fileRef = FD7839D51C1FAB8D0015531A /* Budget.png */; };
+		FD7839DB1C1FAB8D0015531A /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = FD7839D61C1FAB8D0015531A /* check.png */; };
+		FD7839DC1C1FAB8D0015531A /* Find Food.png in Resources */ = {isa = PBXBuildFile; fileRef = FD7839D71C1FAB8D0015531A /* Find Food.png */; };
+		FD7839DD1C1FAB8D0015531A /* hint.png in Resources */ = {isa = PBXBuildFile; fileRef = FD7839D81C1FAB8D0015531A /* hint.png */; };
+		FD7839DE1C1FAB8D0015531A /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = FD7839D91C1FAB8D0015531A /* settings.png */; };
+		FD7839E11C1FABDA0015531A /* FindFoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7839E01C1FABDA0015531A /* FindFoodViewController.m */; };
+		FD7839E41C1FABEC0015531A /* BudgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7839E31C1FABEC0015531A /* BudgetViewController.m */; };
+		FD7839E71C1FABFE0015531A /* settingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7839E61C1FABFE0015531A /* settingsViewController.m */; };
+		FD7839E91C1FCFC40015531A /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = FD7839E81C1FCFC30015531A /* person.png */; };
+		FD7839EB1C1FD0F70015531A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7839EA1C1FD0F70015531A /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD7839C61C1FAB0D0015531A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD7839A41C1FAB0C0015531A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD7839AB1C1FAB0C0015531A;
+			remoteInfo = MealPickerProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		87FB17C500108EB2D5097831 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A6EB1D0FA01069A8A2A5E0E5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADDB380A9A094F420C609FCF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FD7839AC1C1FAB0C0015531A /* MealPickerProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealPickerProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD7839B01C1FAB0D0015531A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7839B11C1FAB0D0015531A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD7839B31C1FAB0D0015531A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD7839B41C1FAB0D0015531A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD7839B61C1FAB0D0015531A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FD7839B71C1FAB0D0015531A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FD7839BA1C1FAB0D0015531A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD7839BC1C1FAB0D0015531A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FD7839BF1C1FAB0D0015531A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FD7839C51C1FAB0D0015531A /* MealPickerProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealPickerProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD7839CA1C1FAB0D0015531A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7839CB1C1FAB0D0015531A /* MealPickerProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MealPickerProjectTests.m; sourceTree = "<group>"; };
+		FD7839D51C1FAB8D0015531A /* Budget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Budget.png; path = Images.xcassets/Budget.png; sourceTree = "<group>"; };
+		FD7839D61C1FAB8D0015531A /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check.png; path = Images.xcassets/check.png; sourceTree = "<group>"; };
+		FD7839D71C1FAB8D0015531A /* Find Food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Find Food.png"; path = "Images.xcassets/Find Food.png"; sourceTree = "<group>"; };
+		FD7839D81C1FAB8D0015531A /* hint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hint.png; path = Images.xcassets/hint.png; sourceTree = "<group>"; };
+		FD7839D91C1FAB8D0015531A /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Images.xcassets/settings.png; sourceTree = "<group>"; };
+		FD7839DF1C1FABDA0015531A /* FindFoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindFoodViewController.h; sourceTree = "<group>"; };
+		FD7839E01C1FABDA0015531A /* FindFoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindFoodViewController.m; sourceTree = "<group>"; };
+		FD7839E21C1FABEC0015531A /* BudgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetViewController.h; sourceTree = "<group>"; };
+		FD7839E31C1FABEC0015531A /* BudgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetViewController.m; sourceTree = "<group>"; };
+		FD7839E51C1FABFE0015531A /* settingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingsViewController.h; sourceTree = "<group>"; };
+		FD7839E61C1FABFE0015531A /* settingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingsViewController.m; sourceTree = "<group>"; };
+		FD7839E81C1FCFC30015531A /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = person.png; path = Images.xcassets/person.png; sourceTree = "<group>"; };
+		FD7839EA1C1FD0F70015531A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD7839A91C1FAB0C0015531A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7839EB1C1FD0F70015531A /* CoreLocation.framework in Frameworks */,
+				CCCB9EA628C1E81F96ACC935 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD7839C21C1FAB0D0015531A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE2D4362A3D258BD82E714FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD7839EA1C1FD0F70015531A /* CoreLocation.framework */,
+				A6EB1D0FA01069A8A2A5E0E5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C565B4854702046C8CB722E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADDB380A9A094F420C609FCF /* Pods.debug.xcconfig */,
+				87FB17C500108EB2D5097831 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD7839A31C1FAB0C0015531A = {
+			isa = PBXGroup;
+			children = (
+				FD7839AE1C1FAB0C0015531A /* MealPickerProject */,
+				FD7839C81C1FAB0D0015531A /* MealPickerProjectTests */,
+				FD7839AD1C1FAB0C0015531A /* Products */,
+				C565B4854702046C8CB722E8 /* Pods */,
+				AE2D4362A3D258BD82E714FF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD7839AD1C1FAB0C0015531A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD7839AC1C1FAB0C0015531A /* MealPickerProject.app */,
+				FD7839C51C1FAB0D0015531A /* MealPickerProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD7839AE1C1FAB0C0015531A /* MealPickerProject */ = {
+			isa = PBXGroup;
+			children = (
+				FD7839B31C1FAB0D0015531A /* AppDelegate.h */,
+				FD7839B41C1FAB0D0015531A /* AppDelegate.m */,
+				FD7839B61C1FAB0D0015531A /* ViewController.h */,
+				FD7839B71C1FAB0D0015531A /* ViewController.m */,
+				FD7839DF1C1FABDA0015531A /* FindFoodViewController.h */,
+				FD7839E01C1FABDA0015531A /* FindFoodViewController.m */,
+				FD7839E21C1FABEC0015531A /* BudgetViewController.h */,
+				FD7839E31C1FABEC0015531A /* BudgetViewController.m */,
+				FD7839E51C1FABFE0015531A /* settingsViewController.h */,
+				FD7839E61C1FABFE0015531A /* settingsViewController.m */,
+				FD7839B91C1FAB0D0015531A /* Main.storyboard */,
+				FD7839BC1C1FAB0D0015531A /* Images.xcassets */,
+				FD7839BE1C1FAB0D0015531A /* LaunchScreen.xib */,
+				FD7839AF1C1FAB0D0015531A /* Supporting Files */,
+			);
+			path = MealPickerProject;
+			sourceTree = "<group>";
+		};
+		FD7839AF1C1FAB0D0015531A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD7839E81C1FCFC30015531A /* person.png */,
+				FD7839D51C1FAB8D0015531A /* Budget.png */,
+				FD7839D61C1FAB8D0015531A /* check.png */,
+				FD7839D71C1FAB8D0015531A /* Find Food.png */,
+				FD7839D81C1FAB8D0015531A /* hint.png */,
+				FD7839D91C1FAB8D0015531A /* settings.png */,
+				FD7839B01C1FAB0D0015531A /* Info.plist */,
+				FD7839B11C1FAB0D0015531A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD7839C81C1FAB0D0015531A /* MealPickerProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD7839CB1C1FAB0D0015531A /* MealPickerProjectTests.m */,
+				FD7839C91C1FAB0D0015531A /* Supporting Files */,
+			);
+			path = MealPickerProjectTests;
+			sourceTree = "<group>";
+		};
+		FD7839C91C1FAB0D0015531A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD7839CA1C1FAB0D0015531A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD7839AB1C1FAB0C0015531A /* MealPickerProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD7839CF1C1FAB0D0015531A /* Build configuration list for PBXNativeTarget "MealPickerProject" */;
+			buildPhases = (
+				5A7BD28EB0D235669E96408B /* Check Pods Manifest.lock */,
+				FD7839A81C1FAB0C0015531A /* Sources */,
+				FD7839A91C1FAB0C0015531A /* Frameworks */,
+				FD7839AA1C1FAB0C0015531A /* Resources */,
+				EB365BA94A4AFCD64395257B /* Embed Pods Frameworks */,
+				B2C993946DE463680F69D34A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MealPickerProject;
+			productName = MealPickerProject;
+			productReference = FD7839AC1C1FAB0C0015531A /* MealPickerProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD7839C41C1FAB0D0015531A /* MealPickerProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD7839D21C1FAB0D0015531A /* Build configuration list for PBXNativeTarget "MealPickerProjectTests" */;
+			buildPhases = (
+				FD7839C11C1FAB0D0015531A /* Sources */,
+				FD7839C21C1FAB0D0015531A /* Frameworks */,
+				FD7839C31C1FAB0D0015531A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD7839C71C1FAB0D0015531A /* PBXTargetDependency */,
+			);
+			name = MealPickerProjectTests;
+			productName = MealPickerProjectTests;
+			productReference = FD7839C51C1FAB0D0015531A /* MealPickerProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD7839A41C1FAB0C0015531A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Edwin Li";
+				TargetAttributes = {
+					FD7839AB1C1FAB0C0015531A = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					FD7839C41C1FAB0D0015531A = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = FD7839AB1C1FAB0C0015531A;
+					};
+				};
+			};
+			buildConfigurationList = FD7839A71C1FAB0C0015531A /* Build configuration list for PBXProject "MealPickerProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD7839A31C1FAB0C0015531A;
+			productRefGroup = FD7839AD1C1FAB0C0015531A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD7839AB1C1FAB0C0015531A /* MealPickerProject */,
+				FD7839C41C1FAB0D0015531A /* MealPickerProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD7839AA1C1FAB0C0015531A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7839DE1C1FAB8D0015531A /* settings.png in Resources */,
+				FD7839DD1C1FAB8D0015531A /* hint.png in Resources */,
+				FD7839DA1C1FAB8D0015531A /* Budget.png in Resources */,
+				FD7839DB1C1FAB8D0015531A /* check.png in Resources */,
+				FD7839BB1C1FAB0D0015531A /* Main.storyboard in Resources */,
+				FD7839C01C1FAB0D0015531A /* LaunchScreen.xib in Resources */,
+				FD7839E91C1FCFC40015531A /* person.png in Resources */,
+				FD7839BD1C1FAB0D0015531A /* Images.xcassets in Resources */,
+				FD7839DC1C1FAB8D0015531A /* Find Food.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD7839C31C1FAB0D0015531A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A7BD28EB0D235669E96408B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2C993946DE463680F69D34A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB365BA94A4AFCD64395257B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD7839A81C1FAB0C0015531A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7839B81C1FAB0D0015531A /* ViewController.m in Sources */,
+				FD7839B51C1FAB0D0015531A /* AppDelegate.m in Sources */,
+				FD7839B21C1FAB0D0015531A /* main.m in Sources */,
+				FD7839E11C1FABDA0015531A /* FindFoodViewController.m in Sources */,
+				FD7839E41C1FABEC0015531A /* BudgetViewController.m in Sources */,
+				FD7839E71C1FABFE0015531A /* settingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD7839C11C1FAB0D0015531A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7839CC1C1FAB0D0015531A /* MealPickerProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD7839C71C1FAB0D0015531A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD7839AB1C1FAB0C0015531A /* MealPickerProject */;
+			targetProxy = FD7839C61C1FAB0D0015531A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD7839B91C1FAB0D0015531A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD7839BA1C1FAB0D0015531A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD7839BE1C1FAB0D0015531A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD7839BF1C1FAB0D0015531A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD7839CD1C1FAB0D0015531A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD7839CE1C1FAB0D0015531A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD7839D01C1FAB0D0015531A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADDB380A9A094F420C609FCF /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MealPickerProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FD7839D11C1FAB0D0015531A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87FB17C500108EB2D5097831 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MealPickerProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FD7839D31C1FAB0D0015531A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MealPickerProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MealPickerProject.app/MealPickerProject";
+			};
+			name = Debug;
+		};
+		FD7839D41C1FAB0D0015531A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MealPickerProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MealPickerProject.app/MealPickerProject";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD7839A71C1FAB0C0015531A /* Build configuration list for PBXProject "MealPickerProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD7839CD1C1FAB0D0015531A /* Debug */,
+				FD7839CE1C1FAB0D0015531A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD7839CF1C1FAB0D0015531A /* Build configuration list for PBXNativeTarget "MealPickerProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD7839D01C1FAB0D0015531A /* Debug */,
+				FD7839D11C1FAB0D0015531A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD7839D21C1FAB0D0015531A /* Build configuration list for PBXNativeTarget "MealPickerProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD7839D31C1FAB0D0015531A /* Debug */,
+				FD7839D41C1FAB0D0015531A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD7839A41C1FAB0C0015531A /* Project object */;
+}
