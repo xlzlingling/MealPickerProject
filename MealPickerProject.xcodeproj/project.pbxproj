@@ -25,6 +25,7 @@
 		FD7839E71C1FABFE0015531A /* settingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7839E61C1FABFE0015531A /* settingsViewController.m */; };
 		FD7839E91C1FCFC40015531A /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = FD7839E81C1FCFC30015531A /* person.png */; };
 		FD7839EB1C1FD0F70015531A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7839EA1C1FD0F70015531A /* CoreLocation.framework */; };
+		FD7839EE1C2077660015531A /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7839ED1C2077660015531A /* Restaurant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		FD7839E61C1FABFE0015531A /* settingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingsViewController.m; sourceTree = "<group>"; };
 		FD7839E81C1FCFC30015531A /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = person.png; path = Images.xcassets/person.png; sourceTree = "<group>"; };
 		FD7839EA1C1FD0F70015531A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FD7839EC1C2077660015531A /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		FD7839ED1C2077660015531A /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				FD7839B71C1FAB0D0015531A /* ViewController.m */,
 				FD7839DF1C1FABDA0015531A /* FindFoodViewController.h */,
 				FD7839E01C1FABDA0015531A /* FindFoodViewController.m */,
+				FD7839EC1C2077660015531A /* Restaurant.h */,
+				FD7839ED1C2077660015531A /* Restaurant.m */,
 				FD7839E21C1FABEC0015531A /* BudgetViewController.h */,
 				FD7839E31C1FABEC0015531A /* BudgetViewController.m */,
 				FD7839E51C1FABFE0015531A /* settingsViewController.h */,
@@ -338,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD7839B81C1FAB0D0015531A /* ViewController.m in Sources */,
+				FD7839EE1C2077660015531A /* Restaurant.m in Sources */,
 				FD7839B51C1FAB0D0015531A /* AppDelegate.m in Sources */,
 				FD7839B21C1FAB0D0015531A /* main.m in Sources */,
 				FD7839E11C1FABDA0015531A /* FindFoodViewController.m in Sources */,
