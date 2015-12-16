@@ -8,10 +8,11 @@
 
 #import "FindFoodViewController.h"
 #import "Restaurant.h"
+#import "infoWindowView.h"
 #import <MapKit/MapKit.h>
 @import GoogleMaps;
 
-@interface FindFoodViewController () <CLLocationManagerDelegate>
+@interface FindFoodViewController () <CLLocationManagerDelegate , GMSMapViewDelegate >
 @property (weak, nonatomic) NSString *userCurrentLatitude;
 @property (weak, nonatomic) NSString *userCurrentLongitude;
 @property (weak, nonatomic) NSString *userCurrentAddress;
@@ -21,7 +22,7 @@
 @end
 
 @implementation FindFoodViewController{
-    GMSMapView *mapView_;
+    GMSMapView *mapView;
     NSMutableDictionary *restaurantList;
 }
 
@@ -51,39 +52,36 @@
     self.userCurrentLongitude = @"-73.9950";
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:[self.userCurrentLatitude doubleValue]
                                                             longitude:[self.userCurrentLongitude doubleValue]
-                                                                 zoom:15];
+                                                                 zoom:14.5];
     GMSMapView *mapView = [GMSMapView mapWithFrame:CGRectMake(0, 40, 350, 350) camera:camera];
-    for (NSString *key in restaurantList ) {
-        GMSMarker *mkr = [[GMSMarker alloc]init];
-        NSString *address = [[restaurantList objectForKey:key]getAddress];
-        
-        mkr.position = CLLocationCoordinate2DMake([[[restaurantList objectForKey:key]getLatitude] doubleValue], [[[restaurantList objectForKey:key]getLongtitude] doubleValue]);
-        mkr.appearAnimation = kGMSMarkerAnimationPop;
-        mkr.icon = [GMSMarker markerImageWithColor:[UIColor redColor]];
-        mkr.icon = [UIImage imageNamed:@"flag_icon"];
-        NSString *info = [NSString stringWithFormat:@"Title: %@\nAddress: %@", key,[[restaurantList objectForKey:key]getAddress]];
-        mkr.snippet = info;
-        mkr.map = mapView;
-    }
-    //pin points on map
-    //    for(GMSMarker*marker in dictionary)
-    //    {
-    //        GMSMarker *mkr= [[GMSMarker alloc]init];
-    //        [mkr setPosition:CLLocationCoordinate2DMake(<coord>)];
-    //
-    //        [mkr setAnimated:YES];
-    //        [mkr setTitle:<Title>];
-    //        [mkr setSnippet:<Snippet>];
-    //        [mkr setMap:mapView_];
-    //    }
+    mapView.delegate = self;
+//    for (NSString *key in restaurantList ) {
+//        GMSMarker *mkr = [[GMSMarker alloc]init];
+//        NSString *address = [[restaurantList objectForKey:key]getAddress];
+//        
+//        mkr.position = CLLocationCoordinate2DMake([[[restaurantList objectForKey:key]getLatitude] doubleValue], [[[restaurantList objectForKey:key]getLongtitude] doubleValue]);
+//        mkr.appearAnimation = kGMSMarkerAnimationPop;
+//        mkr.icon = [GMSMarker markerImageWithColor:[UIColor redColor]];
+//        mkr.icon = [UIImage imageNamed:@"flag_icon"];
+//        NSString *info = [NSString stringWithFormat:@"Title: %@\nAddress: %@", key,[[restaurantList objectForKey:key]getAddress]];
+//        //mkr.snippet = info;
+//        mkr.infoWindowAnchor = CGPointMake(0.44f, 0.45f);
+//
+//        mkr.map = mapView;
+//    }
+    // for userCurrentLocation
     GMSMarker *marker = [[GMSMarker alloc] init];
-    
     marker.position = CLLocationCoordinate2DMake(40.7300, -73.9950);
-    marker.icon = [GMSMarker markerImageWithColor:[UIColor blueColor]];
-    marker.snippet = @"NYU";//can be use to display the name & info for the marker
+    //marker.snippet = @"NYU";//can be use to display the name & info for the marker
     marker.appearAnimation = kGMSMarkerAnimationPop;
     marker.icon = [UIImage imageNamed:@"person"];
     marker.map = mapView;
+    GMSMarker *mkrTemp = [[GMSMarker alloc]init];
+    mkrTemp.position = CLLocationCoordinate2DMake(40.72463457437033, -73.99840235710144);
+    //mkrTemp.title = @"Blue Ribbon Sushi";
+    mkrTemp.infoWindowAnchor = CGPointMake(0.44f, 0.45f);
+    mkrTemp.icon = [GMSMarker markerImageWithColor:[UIColor blueColor]];
+    mkrTemp.map = mapView;
     
     //add a cicle of area
     CLLocationCoordinate2D circleCenter = CLLocationCoordinate2DMake(40.7300, -73.9950);
@@ -103,6 +101,18 @@
     cell.textLabel.text = [myArray objectAtIndex:indexPath.row];
     return cell;
 }
+
+
+-(UIView *)mapView:(GMSMapView *)mapView markerInfoWindow:(GMSMarker *)marker {
+    infoWindowView *infoWindow =  [[[NSBundle mainBundle] loadNibNamed:@"InfoWindow" owner:self options:nil] objectAtIndex:0];    infoWindow.titleName.text =@"Blue Ribbon Sushi";
+    infoWindow.address.text = @"119 Sullivan St";
+    infoWindow.cuisineType.text = @"Sushi";
+    infoWindow.photo.image =[UIImage imageNamed:@"check"];
+    
+    return infoWindow;
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

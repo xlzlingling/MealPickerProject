@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FindFoodViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>{
+@interface FindFoodViewController : UIViewController  <UITableViewDataSource, UITableViewDelegate >{
     IBOutlet UITableView *tableView;
     NSArray * myArray;
 }

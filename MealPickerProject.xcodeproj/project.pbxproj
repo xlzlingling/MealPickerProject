@@ -26,6 +26,9 @@
 		FD7839E91C1FCFC40015531A /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = FD7839E81C1FCFC30015531A /* person.png */; };
 		FD7839EB1C1FD0F70015531A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7839EA1C1FD0F70015531A /* CoreLocation.framework */; };
 		FD7839EE1C2077660015531A /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7839ED1C2077660015531A /* Restaurant.m */; };
+		FD7839F01C20C4B30015531A /* InfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD7839EF1C20C4B30015531A /* InfoWindow.xib */; };
+		FD7839F21C20DC3E0015531A /* infoBox.png in Resources */ = {isa = PBXBuildFile; fileRef = FD7839F11C20DC3E0015531A /* infoBox.png */; };
+		FD7839F51C20E0EE0015531A /* infoWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7839F41C20E0EE0015531A /* infoWindowView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,10 @@
 		FD7839EA1C1FD0F70015531A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FD7839EC1C2077660015531A /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
 		FD7839ED1C2077660015531A /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
+		FD7839EF1C20C4B30015531A /* InfoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoWindow.xib; sourceTree = "<group>"; };
+		FD7839F11C20DC3E0015531A /* infoBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = infoBox.png; path = Images.xcassets/infoBox.png; sourceTree = "<group>"; };
+		FD7839F31C20E0EE0015531A /* infoWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoWindowView.h; sourceTree = "<group>"; };
+		FD7839F41C20E0EE0015531A /* infoWindowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoWindowView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +146,9 @@
 				FD7839B71C1FAB0D0015531A /* ViewController.m */,
 				FD7839DF1C1FABDA0015531A /* FindFoodViewController.h */,
 				FD7839E01C1FABDA0015531A /* FindFoodViewController.m */,
+				FD7839EF1C20C4B30015531A /* InfoWindow.xib */,
+				FD7839F31C20E0EE0015531A /* infoWindowView.h */,
+				FD7839F41C20E0EE0015531A /* infoWindowView.m */,
 				FD7839EC1C2077660015531A /* Restaurant.h */,
 				FD7839ED1C2077660015531A /* Restaurant.m */,
 				FD7839E21C1FABEC0015531A /* BudgetViewController.h */,
@@ -156,6 +166,7 @@
 		FD7839AF1C1FAB0D0015531A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FD7839F11C20DC3E0015531A /* infoBox.png */,
 				FD7839E81C1FCFC30015531A /* person.png */,
 				FD7839D51C1FAB8D0015531A /* Budget.png */,
 				FD7839D61C1FAB8D0015531A /* check.png */,
@@ -268,7 +279,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7839F21C20DC3E0015531A /* infoBox.png in Resources */,
 				FD7839DE1C1FAB8D0015531A /* settings.png in Resources */,
+				FD7839F01C20C4B30015531A /* InfoWindow.xib in Resources */,
 				FD7839DD1C1FAB8D0015531A /* hint.png in Resources */,
 				FD7839DA1C1FAB8D0015531A /* Budget.png in Resources */,
 				FD7839DB1C1FAB8D0015531A /* check.png in Resources */,
@@ -344,6 +357,7 @@
 			files = (
 				FD7839B81C1FAB0D0015531A /* ViewController.m in Sources */,
 				FD7839EE1C2077660015531A /* Restaurant.m in Sources */,
+				FD7839F51C20E0EE0015531A /* infoWindowView.m in Sources */,
 				FD7839B51C1FAB0D0015531A /* AppDelegate.m in Sources */,
 				FD7839B21C1FAB0D0015531A /* main.m in Sources */,
 				FD7839E11C1FABDA0015531A /* FindFoodViewController.m in Sources */,
